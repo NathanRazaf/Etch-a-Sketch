@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="header">
-        Etch-a-Sketch
-    </div>
+    <div class="header">Etch-A-Sketch</div>
 
     <div class="interface">
-        <div class="options">
-            <button class="random">Randomizer</button>
-            <button class="black">Black</button>
-            <button class="clear">Clear</button>
+        <div class="buttons">
+            <button id="grid-size">Grid size</button>
+            <button id="random">Randomizer</button>
+            <button id="black">Black</button>
+            <button id="eraser">Eraser</button>
+            <button id="clean">Clean grid</button>
+        </div>
+        <div id="grid">
         </div>
     </div>
-
-
+    
+    <div class="footer">
+        <a href="https://github.com/NathanRazaf/Etch-a-Sketch/tree/main" id="source">Source</a>
+    </div>
+    
     <script src="script.js"></script>
+
 </body>
 </html>
