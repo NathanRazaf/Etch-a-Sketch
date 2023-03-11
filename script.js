@@ -3,6 +3,9 @@ let gridSize = 10;
 const grid=document.getElementById('grid');
 
 function makeGrid(size) {
+    if (size>64) {
+        size=64;
+    }
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
